@@ -44,6 +44,7 @@ namespace PROGII_OTRAIS_PRAKT
                 CommandText = "INSERT INTO Receptes (timeStamp, nosaukums, pagatavosana, sastavdalas, bilde) VALUES (@timeStamp, @nosaukums, @pagatavosana, @sastavdalas, @bilde)"
             };
 
+            //meta error par CommandText. Pisos 1h, nevaru atrast kur problemaa
             dbCommand.Parameters.AddWithValue("@timeStamp", OleDbType.DBTimeStamp).Value = timeStamp;
             dbCommand.Parameters.AddWithValue("@nosaukums", OleDbType.Char).Value = nosaukums;
             dbCommand.Parameters.AddWithValue("@pagatavosana", OleDbType.Char).Value = pagatavosana;
