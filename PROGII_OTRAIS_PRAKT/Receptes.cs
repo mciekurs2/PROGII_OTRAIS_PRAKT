@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace PROGII_OTRAIS_PRAKT
 {
-    public partial class Form1 : Form
+    public partial class Receptes : Form
     {
-        public Form1()
+        public Receptes()
         {
             InitializeComponent();
+        }
+
+        private void JaunsButton_Click(object sender, EventArgs e)
+        {
+            var jaunaRecepte = new JaunaRecepte();
+            jaunaRecepte.ShowDialog();
         }
     }
 }
